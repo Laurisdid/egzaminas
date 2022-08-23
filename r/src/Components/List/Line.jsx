@@ -16,13 +16,13 @@ function Line({ line }) {
         <li className="list-group-item">
             <div className="item">
                 <div className="content">
-                <b style={{ paddingRight: "9%" }}>{line.meistras}</b>
-                    <i style={{ padding: "3%"}}>{line.vardas} </i>
-                    <i style={{ padding: "3%"  }}>{line.pavarde} </i>
-                    <i style={{ padding: "3%"  }}>{line.spec} </i>
-                    <i style={{ padding: "3%" }}>{line.servisas} </i>
-                    <i style={{ padding: "3%"}}>{line.miestas} </i>
-                    <i style={{ padding: "3%"}}>{line.sum} </i>
+                <b style={{ minWidth: "17vh" }}>{line.meistras}</b>
+                    <i style={{ minWidth: "12vh" }}>{line.vardas} </i>
+                    <i style={{ minWidth: "15vh" }}>{line.pavarde} </i>
+                    <i style={{ minWidth: "15vh" }}>{line.spec} </i>
+                    <i style={{ minWidth: "15vh" }}>{line.servisas} </i>
+                    <i style={{ minWidth: "9vh" }}>{line.miestas} </i>
+                    <i style={{ minWidth: "3vh" }}>{line.rank} </i>
                     {
                         line.photo ? <div className="photo-bin"><img style={{ width: "80px"}} src={line.photo} alt={""} /></div> : null
                     }
