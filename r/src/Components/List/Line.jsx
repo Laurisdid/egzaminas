@@ -1,4 +1,4 @@
-import { useState,useContext } from "react";
+import { useState} from "react";
 import axios from "axios";
 
 function Line({ line }) {
@@ -24,7 +24,7 @@ function Line({ line }) {
                     <i style={{ padding: "3%"}}>{line.miestas} </i>
                     <i style={{ padding: "3%"}}>{line.sum} </i>
                     {
-                        line.photo ? <div className="photo-bin"><img style={{ width: "80px"}} src={line.photo} alt={line.photo} /></div> : null
+                        line.photo ? <div className="photo-bin"><img style={{ width: "80px"}} src={line.photo} alt={""} /></div> : null
                     }
                 </div>
                 <div className="form-group" style={{ float: "right",width: "100px" }}>
