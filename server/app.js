@@ -105,26 +105,39 @@ app.delete("/meister/:id", (req, res) => {
 });
 
 
-app.put("/meister/rate/", (req, res) => {
-    const selectQuerry = `
+// app.put("/meister/rate/", (req, res) => {
+//     console.log(req.body.sum);
+//     const selectQuerry = `
     
-    SELECT rank
-    FROM meister   
-    WHERE id = ?
-    `
-    con.query(selectQuerry, [req.body.id], (err, result) => {
-        if (err) throw err;
-        console.log(result);
-        const sql =
-            `
-    UPDATE meister
-    SET rank = ${parseInt(result[0].rank)+ parseInt(req.body.rank)} 
-    WHERE id = ?
+//     SELECT sum
+//     FROM rate   
+//     WHERE id = ?
+//     `
+//     con.query(selectQuerry, [req.body.id], (err, result) => {
+//         if (err) throw err;
+//         console.log(result);
+//         const sql =
+//             `
+//     UPDATE rate
+//     SET sum = ${parseInt(result[0].sum)+ parseInt(req.body.sum)} 
+//     WHERE id = ?
+//     `;
+//         con.query(sql, [req.body.id], (err, result) => {
+//             if (err) throw err;
+//             res.send({ result, msg: { text: 'OK', type: 'success' } });
+//         });
+//     });
+// });
+app.put("/rate/", (req, res) => {
+    console.log(req.body.id,req.body.sum);
+    const sql = `
+    INSERT INTO rate
+    (sum, target)
+    VALUES (?, ?)
     `;
-        con.query(sql, [req.body.id], (err, result) => {
-            if (err) throw err;
-            res.send({ result, msg: { text: 'OK', type: 'success' } });
-        });
+    con.query(sql, [req.body.sum, req.body.id], (err, result) => {
+        if (err) throw err;
+        res.send({ result, msg: { text: 'OK, created', type: 'success' } });
     });
 });
 

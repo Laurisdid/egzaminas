@@ -18,10 +18,10 @@ function Line({ line }) {
             <div className="item">
                 <div className="content">
                     <b style={{ minWidth: "15vh" }}>{line.meistras}</b>
-                    <i style={{ minWidth: "9vh" }}>{line.vardas} </i>
-                    <i style={{ minWidth: "9vh" }}>{line.pavarde} </i>
-                    <i style={{ minWidth: "9vh" }}>{line.spec} </i>
-                    <i style={{ minWidth: "9vh" }}>{line.servisas} </i>
+                    <i style={{ minWidth: "10vh" }}>{line.vardas} </i>
+                    <i style={{ minWidth: "10vh" }}>{line.pavarde} </i>
+                    <i style={{ minWidth: "10vh" }}>{line.spec} </i>
+                    <i style={{ minWidth: "10vh" }}>{line.servisas} </i>
                     <i style={{ minWidth: "9vh" }}>{line.miestas} </i>
                     <i style={{ minWidth: "9vh" }}>{line.rank} </i>
                     {

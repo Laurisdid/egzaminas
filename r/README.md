@@ -10,3 +10,20 @@ atsidaryti 2 terminalus :
  cd server
  npm i (jeigu paleidinejama pirma karta)
  npm start
+
+
+
+
+bandymui yra sukurti 2 vartotojai :
+
+admin :
+login:
+briedis
+pass:
+123
+
+user:
+login:
+bebras
+pass:
+123

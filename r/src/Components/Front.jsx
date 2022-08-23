@@ -13,18 +13,12 @@ function Front() {
             .then(res => setIdeas(res.data));
     }, []);
 
-    // const [apideas, setapIdeas] = useState(null);
-    // useEffect(() => {
-    //     axios.get('http://localhost:3003/approved-project', authConfig())
-    //         .then(res => setapIdeas(res.data));
-    // }, []);
+    
     
     return (
         <Context.Provider value={{
             ideas,
             setIdeas,
-            // apideas,
-            // setapIdeas
         }}>
             <Nav />
             <div className="container">

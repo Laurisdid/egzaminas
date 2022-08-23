@@ -19,7 +19,8 @@ function List() {
                     <b style={{ padding: "3%" }}>Pavarde</b>
                     <b style={{ padding: "3%" }}>Specelybe</b>
                     <b style={{ padding: "3%" }}>servisas</b>
-                    <b style={{ padding: "10%" }}>Photo</b>
+                    <b style={{ padding: "3%" }}>miestas</b>
+                    <b style={{ padding: "5%" }}>Photo</b>
                 </ul>
                 <ul className="list-group">
                     {

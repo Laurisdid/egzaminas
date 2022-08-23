@@ -10,7 +10,7 @@ import {
 } from "react-router-dom";
  import CreatePage from './Components/Create/Create';
  import FrontPage from './Components/Front';
- import AdminPage from "./Components/Approve/AdminPage"
+ import AdminPage from "./Components/Admin/AdminPage"
 import { login, logout, authConfig } from './Components/Functions/auth'
 import axios from 'axios';
 import { useState, useEffect } from "react";

@@ -6,18 +6,12 @@ import Nav from "../Nav";
 
 
 function Create() {
-  // const [title, setTitle] = useState("title");
-  // const [text, setText] = useState("text");
-  // const [required, setRequired] = useState(0);
-
   const [meistras, setMeistras] = useState("Meistras")
   const [vardas,setVardas ] = useState("vardas")
   const [pavarde,setPavarde ] = useState("pavarde")
   const [spec,setSpec ] = useState("specealybe")
   const [servisas,setServisas ] = useState("servisas")
   const [miestas,setMiestas ] = useState("miestas")
-
-
   const [photoPrint, setPhotoPrint] = useState(null);
   const fileInput = useRef();
 
